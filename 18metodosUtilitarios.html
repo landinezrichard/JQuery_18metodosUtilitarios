@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>18 Metodos Utilitarios</title>		
+		
+		<!--Scripts Aca -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js">		
+		</script>
+		<script type="text/javascript">
+			$(document).on("ready",function(){
+				
+				var arreglo=["Primero","Segundo","Tercero"];
+				
+				//recorre el array
+				$.each(arreglo,function(indice,valor){
+					console.log("En la posicion: "+indice+" hay este contenido:"+valor);
+				});
+				
+				//busca si se encuentra en el arreglo, devuelve la posición(indice) si lo encuentra, sino -1
+				var encontro=$.inArray("Primero",arreglo);
+				
+				if(encontro != -1){
+					console.log(arreglo[encontro]);
+				}
+				
+				var mensaje="		    	al principio hay un espacio grande y al final tambien       	";
+				console.log(mensaje);
+				//elimina espacios al principio y al final:
+				console.log($.trim(mensaje));
+				
+			});
+		
+		</script>
+		
+	</head>
+	<body>
+		
+	</body>
+</html>
